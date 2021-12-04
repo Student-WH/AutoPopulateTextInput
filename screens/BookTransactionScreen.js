@@ -65,12 +65,16 @@ export default class TransactionScreen extends React.Component {
       else if (buttonState === "normal"){
         return(
           <View style={styles.container}>
+            
+            
             <View>
               <Image
                 source={require("../assets/booklogo.jpg")}
                 style={{width:200, height: 200}}/>
               <Text style={{textAlign: 'center', fontSize: 30}}>Wily</Text>
             </View>
+
+
             <View style={styles.inputView}>
             <TextInput 
               style={styles.inputBox}
@@ -84,6 +88,9 @@ export default class TransactionScreen extends React.Component {
               <Text style={styles.buttonText}>Scan</Text>
             </TouchableOpacity>
             </View>
+
+
+
             <View style={styles.inputView}>
             <TextInput 
               style={styles.inputBox}
@@ -97,6 +104,8 @@ export default class TransactionScreen extends React.Component {
               <Text style={styles.buttonText}>Scan</Text>
             </TouchableOpacity>
             </View>
+
+
           </View>
         );
       }
